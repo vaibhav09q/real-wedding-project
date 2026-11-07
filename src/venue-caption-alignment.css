@@ -1,0 +1,4 @@
+/* Keep the supplied venue image intact so its caption remains centered. */
+.venue-art { background: #2b0712; }
+.venue-art img { object-fit: contain; object-position: center; filter: none; transform: none !important; }
+.venue-art::after { background: none; }
