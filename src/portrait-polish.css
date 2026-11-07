@@ -1,0 +1,5 @@
+.couple-float { display: inline-block; animation: framed-portrait-float 7.5s 1.8s ease-in-out infinite; }
+.portrait-gradient { position: absolute; z-index: 1; inset: 9px; pointer-events: none; border: 1px solid #ffe6a044; background: linear-gradient(180deg, #36061218 32%, #25030b20 57%, #21020cc2 100%); }
+.couple-portrait img { animation: none; }
+@keyframes framed-portrait-float { 0%,100% { transform: translate3d(0,0,0) rotate(0); } 25% { transform: translate3d(1px,-2px,0) rotate(.08deg); } 50% { transform: translate3d(0,-4px,0) rotate(0); } 75% { transform: translate3d(-1px,-2px,0) rotate(-.08deg); } }
+@media (prefers-reduced-motion: reduce) { .couple-float { animation: none; } }
