@@ -2,3 +2,4 @@
 .venue-art { background: #2b0712; }
 .venue-art img { object-fit: contain; object-position: center; filter: none; transform: none !important; }
 .venue-art::after { background: none; }
+.venue-image-mark { position: absolute; z-index: 3; left: 10%; right: 10%; bottom: 5%; padding-top: 18px; border-top: 1px solid #d5ad5899; color: #f4d477; text-align: center; text-shadow: 0 2px 9px #24030c; font: italic clamp(25px, 5vw, 46px)/1.1 'Playfair Display', serif; }
