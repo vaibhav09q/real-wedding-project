@@ -1,0 +1,32 @@
+/* Personal portrait and pearlescent date seal */
+.hero h1 { margin-bottom: 24px; }
+.couple-portrait { margin: 0 auto 24px; width: min(214px, 62vw); padding: 5px; border: 1px solid #e8c978; box-shadow: 0 0 0 4px #5a1425, 0 10px 24px #130007aa; background: #c79944; }
+.couple-portrait img { display: block; width: 100%; height: 260px; object-fit: cover; object-position: center 29%; border: 1px solid #fff0c2; }
+.scratch { width: min(100%, 370px); height: 225px; margin-top: 30px; border: 2px solid #b88932; border-radius: 50%; box-shadow: 0 0 0 5px #f4dfb1, 0 12px 26px #70451d2e; }
+.scratch::after { content: '✦'; position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%); color: #b88932; font-size: 12px; pointer-events: none; }
+.date-secret { padding: 30px; }
+.text-button { bottom: 25px; }
+
+/* Layered heirloom frame for the couple portrait */
+.couple-portrait { position: relative; padding: 9px; border: 1px solid #f9e6aa; outline: 1px solid #a77927; outline-offset: 5px; box-shadow: 0 0 0 10px #4a0b1c, 0 0 0 12px #c7973a, 0 19px 37px #0f0009d9; transform: translateZ(0); }
+.couple-portrait::before, .couple-portrait::after { content: '✦'; position: absolute; z-index: 2; width: 27px; height: 27px; display: grid; place-items: center; color: #ffe8a3; background: #601326; border: 1px solid #d6a84b; border-radius: 50%; font-size: 11px; }
+.couple-portrait::before { top: -16px; left: -16px; }.couple-portrait::after { right: -16px; bottom: -16px; }
+.couple-portrait img { height: 278px; border: 1px solid #ffe6a0; filter: contrast(1.04) saturate(.95) sepia(.06); }
+
+/* Venue photograph with a cinematic, restrained label overlay */
+.venue-art { overflow: hidden; isolation: isolate; background: #3a0816; }
+.venue-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: saturate(.74) contrast(1.06) sepia(.16); transition: transform 1.5s cubic-bezier(.16,1,.3,1), filter 1.5s ease; }
+.venue-art::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, #2e061255, transparent 48%, #27040ecc); z-index: 1; }
+.venue-art:hover img { transform: scale(1.075); filter: saturate(.9) contrast(1.08) sepia(.1); }
+.venue-image-mark { position: relative; z-index: 2; color: #f8de9b; text-align: center; margin-top: auto; width: 100%; padding: 28px 18px; text-shadow: 0 2px 13px #160007; }
+.venue-image-mark span { display: block; font: 50px/1 'Playfair Display'; }.venue-image-mark i { font: italic 20px 'Playfair Display'; }
+.venue-art > i, .venue-art > span { display: none; }
+
+/* Cinematic entrances: layered fade, drift and focus as sections enter */
+@keyframes title-rise { from { opacity: 0; transform: translateY(32px) scale(.95); filter: blur(8px); } to { opacity: 1; transform: none; filter: blur(0); } }
+@keyframes image-unveil { from { opacity: 0; transform: translateY(30px) scale(1.09); filter: blur(8px) brightness(.55); } to { opacity: 1; transform: none; filter: blur(0) brightness(1); } }
+@keyframes gold-glow { 0%,100% { box-shadow: 0 0 0 10px #4a0b1c, 0 0 0 12px #c7973a, 0 19px 37px #0f0009d9; } 50% { box-shadow: 0 0 0 10px #4a0b1c, 0 0 0 12px #efd27d, 0 19px 42px #0f0009d9; } }
+.hero .eyebrow { animation: title-rise .8s .08s both cubic-bezier(.16,1,.3,1); }.hero .ornament { animation: title-rise .9s .18s both cubic-bezier(.16,1,.3,1); }.hero h1 { animation: title-rise 1.05s .3s both cubic-bezier(.16,1,.3,1); }.couple-portrait { animation: image-unveil 1.2s .52s both cubic-bezier(.16,1,.3,1), gold-glow 3.4s 1.8s infinite ease-in-out; }.hero .opening { animation: title-rise .8s .72s both cubic-bezier(.16,1,.3,1); }.hero .open { animation: title-rise .8s .85s both cubic-bezier(.16,1,.3,1); }.hero .date-line { animation: title-rise .8s 1s both cubic-bezier(.16,1,.3,1); }
+.reveal { transform: translateY(48px) scale(.97); filter: blur(7px); transition: opacity .9s cubic-bezier(.16,1,.3,1), transform 1s cubic-bezier(.16,1,.3,1), filter .9s ease; }.reveal.shown { filter: blur(0); }
+.event-wrap:nth-child(2) { transition-delay: .08s; }.event-wrap:nth-child(3) { transition-delay: .14s; }.event-wrap:nth-child(4) { transition-delay: .2s; }.event-wrap:nth-child(5) { transition-delay: .08s; }.event-wrap:nth-child(6) { transition-delay: .14s; }.event-wrap:nth-child(7) { transition-delay: .2s; }.event-wrap:nth-child(8) { transition-delay: .26s; }
+@media (prefers-reduced-motion: reduce) { .hero .eyebrow, .hero .ornament, .hero h1, .couple-portrait, .hero .opening, .hero .open, .hero .date-line { animation: none; } .venue-art img { transition: none; } .reveal { filter: none; } }

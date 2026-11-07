@@ -1,0 +1,13 @@
+/* Alignment fixes and hand-drawn floral motifs */
+.scratch::after, .couple-portrait::before, .couple-portrait::after { content: '❦'; }
+.couple-portrait::before, .couple-portrait::after { font-size: 13px; }
+.venue-image-mark { position: absolute; z-index: 2; left: 24px; right: 24px; bottom: 0; width: auto; margin: 0; padding: 33px 18px 24px; text-align: center; border-top: 1px solid #e8c36a88; }
+.venue-image-mark i { display: block; font: italic 23px 'Playfair Display'; letter-spacing: .02em; }
+
+@keyframes venue-unveil { 0% { opacity: 0; transform: translateY(64px) scale(1.18) rotate(-1.4deg); filter: blur(15px) brightness(.25); } 62% { opacity: 1; transform: translateY(-7px) scale(1.018) rotate(.2deg); filter: blur(0) brightness(1.05); } 100% { opacity: 1; transform: translateY(0) scale(1) rotate(0); filter: blur(0) brightness(1); } }
+@keyframes gentle-boat { 0%,100% { transform: translate3d(0,0,0) rotate(0); } 25% { transform: translate3d(3px,-5px,0) rotate(.22deg); } 50% { transform: translate3d(0,-8px,0) rotate(0); } 75% { transform: translate3d(-3px,-4px,0) rotate(-.22deg); } }
+.venue-art.reveal { transform-origin: center; }
+.venue-art.reveal.shown { animation: venue-unveil 1.55s both cubic-bezier(.16,1,.3,1); }
+.venue-art.reveal.shown img { animation: gentle-boat 6s 1.6s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) { .venue-art.reveal.shown, .venue-art.reveal.shown img { animation: none; } }
