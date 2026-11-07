@@ -1,0 +1,7 @@
+/* Small CSS-only invitation details: no bitmap assets or dense pattern layers. */
+.intro, .save, .events, .family { position: relative; isolation: isolate; overflow: hidden; }
+.intro::after, .save::after, .family::after { content: ''; position: absolute; z-index: -1; width: 145px; height: 145px; border: 1px solid #7a1d3126; border-radius: 50%; }
+.intro::after { right: -73px; top: -73px; box-shadow: 0 0 0 12px #7a1d3109, 0 0 0 25px #7a1d3105; }.save::after { left: -73px; bottom: -73px; box-shadow: 0 0 0 12px #7a1d3109, 0 0 0 25px #7a1d3105; }.family::after { right: -73px; bottom: -73px; box-shadow: 0 0 0 12px #7a1d3109, 0 0 0 25px #7a1d3105; }
+.section h2::after { content: ''; display: block; width: 50px; height: 1px; margin: 19px auto 0; background: linear-gradient(90deg, transparent, #a2762d, transparent); }
+.countdown { background-image: radial-gradient(ellipse at 50% -30%, #84263e 0, transparent 48%), linear-gradient(135deg, #2b0510, #5b1024 48%, #330713); }
+.count-grid { border-radius: 2px; }.event-card { background-image: linear-gradient(135deg, #fffdf800, #8b243008); }.event-card::before { border-color: #8a273533; }
