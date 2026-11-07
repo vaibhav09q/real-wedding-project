@@ -1,0 +1,2 @@
+.music-start { position: fixed; z-index: 30; right: 16px; bottom: 16px; border: 1px solid #e5bf67; background: #4b0d1d; color: #fff4da; padding: 11px 14px; box-shadow: 0 8px 20px #28051055; font: 600 11px 'DM Sans',sans-serif; letter-spacing: .08em; cursor: pointer; }
+.music-start:hover { background: #64152a; }
