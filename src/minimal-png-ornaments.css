@@ -1,0 +1,15 @@
+/* A restrained, reusable PNG flourish replaces the dense CSS-drawn embroidery. */
+.sprig { display: none; }
+.intro, .save, .events, .family { background-image: none; }
+.intro { background: url('/designs/maroon-mehendi-flourish.png') top right / 185px auto no-repeat, radial-gradient(#fffdf8,#f6ead8); }
+.save { background: url('/designs/maroon-mehendi-flourish.png') bottom left / 175px auto no-repeat, #e8d6b9; }
+.events { background: url('/designs/maroon-mehendi-flourish.png') top right / 195px auto no-repeat, url('/designs/maroon-mehendi-flourish.png') bottom left / 170px auto no-repeat, #f9f0e2; }
+.family { background: url('/designs/maroon-mehendi-flourish.png') bottom right / 185px auto no-repeat, #eee0ca; }
+.intro::before, .save::before, .family::before, .intro::after, .save::after, .family::after { content: none; }
+.intro h2::after, .save h2::after, .family h2::after { content: ''; width: 46px; height: 1px; margin: 18px auto 0; background: #a5782e; letter-spacing: 0; }
+.save > .reveal::before, .save > .reveal::after { content: none; }
+.event-card { background-image: none; }.event-card h3::before, .event-card h3::after { content: ''; margin: 0; }
+.event-grid { position: relative; }.event-grid::before, .event-grid::after { content: ''; position: absolute; width: 145px; height: 145px; pointer-events: none; opacity: .7; background: url('/designs/maroon-mehendi-flourish.png') center / contain no-repeat; }.event-grid::before { top: -15px; left: -57px; }.event-grid::after { bottom: -20px; right: -55px; transform: rotate(180deg); }
+.countdown { background-image: url('/designs/maroon-mehendi-flourish.png'), url('/designs/maroon-mehendi-flourish.png'), radial-gradient(ellipse at 50% -30%, #84263e 0, transparent 48%), linear-gradient(135deg, #2b0510, #5b1024 48%, #330713); background-position: left top, right bottom, center, center; background-size: 180px auto, 180px auto, auto, auto; background-repeat: no-repeat; }
+.countdown::before, .countdown::after { content: none; }
+@media (max-width:480px){.intro{background-size:125px auto}.save{background-size:120px auto}.events{background-size:135px auto,120px auto}.family{background-size:125px auto}.countdown{background-size:105px auto,105px auto,auto,auto}.event-grid::before,.event-grid::after{width:100px;height:100px;opacity:.55}}

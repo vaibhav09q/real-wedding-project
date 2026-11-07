@@ -10,6 +10,7 @@ import './portrait-polish.css';
 import './invitation-ornament.css';
 import './mehendi-ornament.css';
 import './leaf-embroidery.css';
+import './minimal-png-ornaments.css';
 
 const pad=n=>String(n).padStart(2,'0');
 function Reveal({children, className=''}) { const ref=useRef(null); useEffect(()=>{const o=new IntersectionObserver(([e])=>e.isIntersecting&&e.target.classList.add('shown'),{threshold:.12});if(ref.current)o.observe(ref.current);return()=>o.disconnect()},[]); return <div ref={ref} className={'reveal '+className}>{children}</div> }
