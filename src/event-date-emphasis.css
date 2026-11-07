@@ -1,0 +1,6 @@
+.event-meta { margin-top: 16px !important; }
+.event-date, .event-time { display: block; color: #6d1830; font-family: 'Noto Serif Devanagari', serif; line-height: 1.35; }
+.event-date { font-size: 21px; font-weight: 600; }
+.event-time { font-size: 25px; font-weight: 600; margin-top: 2px; }
+.event-venue { display: block; margin-top: 9px; color: #8c682b; font: 600 12px/1.4 'DM Sans', sans-serif; letter-spacing: .06em; }
+@media (min-width:700px) { .event-date { font-size: 23px; }.event-time { font-size: 28px; } }

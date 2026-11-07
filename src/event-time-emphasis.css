@@ -1,0 +1,6 @@
+.event-meta { display: grid; gap: 3px; margin-top: 15px !important; }
+.event-meta span { color: #7d5420; font: 600 16px/1.35 'Noto Serif Devanagari', serif; }
+.event-meta strong { color: #5e0f24; font: 600 29px/1.08 'Noto Serif Devanagari', serif; letter-spacing: -.02em; }
+.event-meta em { color: #8d672c; font: 600 13px/1.4 'DM Sans', sans-serif; font-style: normal; letter-spacing: .025em; }
+.featured .event-meta strong { color: #6f4511; }
+@media (min-width:700px){.event-meta span{font-size:17px}.event-meta strong{font-size:32px}}
