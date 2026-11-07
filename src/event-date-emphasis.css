@@ -1,6 +1,6 @@
-.event-meta { margin-top: 16px !important; }
-.event-date, .event-time { display: block; color: #6d1830; font-family: 'Noto Serif Devanagari', serif; line-height: 1.35; }
-.event-date { font-size: 21px; font-weight: 600; }
-.event-time { font-size: 25px; font-weight: 600; margin-top: 2px; }
-.event-venue { display: block; margin-top: 9px; color: #8c682b; font: 600 12px/1.4 'DM Sans', sans-serif; letter-spacing: .06em; }
-@media (min-width:700px) { .event-date { font-size: 23px; }.event-time { font-size: 28px; } }
+.event-meta { margin: 19px 0 18px !important; padding: 14px 0 13px; border-top: 1px solid #b7833760; border-bottom: 1px solid #b7833760; }
+.event-date, .event-time { display: block; color: #6d1830; font-family: 'Noto Serif Devanagari', serif; line-height: 1.28; }
+.event-date { font-size: clamp(25px, 6.7vw, 34px) !important; font-weight: 600; }
+.event-time { font-size: clamp(29px, 7.7vw, 39px) !important; font-weight: 600; margin-top: 5px; color: #4f0c1d; }
+.event-venue { display: block; margin-top: 12px; color: #8c682b; font: 600 12px/1.4 'DM Sans', sans-serif; letter-spacing: .06em; }
+@media (min-width:700px) { .event-date { font-size: 30px !important; }.event-time { font-size: 35px !important; } }
