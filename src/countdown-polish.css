@@ -1,0 +1,15 @@
+/* The portrait gently drifts after its opening reveal; the venue remains still. */
+@keyframes portrait-float { 0%,100% { transform: translate3d(0,0,0) rotate(0); } 25% { transform: translate3d(2px,-5px,0) rotate(.18deg); } 50% { transform: translate3d(0,-8px,0) rotate(0); } 75% { transform: translate3d(-2px,-4px,0) rotate(-.18deg); } }
+.couple-portrait img { animation: portrait-float 6s 1.65s ease-in-out infinite; }
+.venue-art.reveal.shown, .venue-art.reveal.shown img { animation: none; }
+
+/* A more formal countdown plaque */
+.countdown { position: relative; overflow: hidden; isolation: isolate; padding: 74px 22px; background: radial-gradient(ellipse at 50% -30%, #84263e 0, transparent 48%), linear-gradient(135deg, #2b0510, #5b1024 48%, #330713); }
+.countdown::before, .countdown::after { content: '❦'; position: absolute; z-index: -1; color: #d6a74820; font: 160px/1 'Playfair Display'; }
+.countdown::before { top: -35px; left: -22px; transform: rotate(-22deg); }.countdown::after { right: -22px; bottom: -52px; transform: rotate(155deg); }
+.countdown .eyebrow { position: relative; margin-bottom: 29px; color: #f1ce78; }
+.count-grid { position: relative; gap: 1px; padding: 1px; border: 1px solid #d5a84c99; background: #d5a84c77; box-shadow: 0 16px 35px #15010888, inset 0 0 0 5px #fff0b50d; }
+.count-grid > div { min-height: 112px; display: grid; place-content: center; gap: 1px; background: linear-gradient(145deg, #691a30, #400916); }
+.count-grid > div:first-child { background: linear-gradient(145deg, #7d273d, #4c0b1a); }.count-grid b { font-size: 43px; text-shadow: 0 2px 14px #17020b; }.count-grid span { color: #f0d895; margin-top: 6px; }
+@media (min-width: 700px) { .countdown { padding: 92px 35px; }.count-grid > div { min-height: 132px; }.count-grid b { font-size: 55px; } }
+@media (prefers-reduced-motion: reduce) { .couple-portrait img { animation: none; } }

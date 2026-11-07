@@ -1,0 +1,9 @@
+/* Hindi ceremony typography and botanical ornament */
+.events { position: relative; overflow: hidden; isolation: isolate; background: linear-gradient(145deg, #fff8ed 0%, #f6e6ca 48%, #fff8ed 100%); }
+.events::before, .events::after { position: absolute; z-index: -1; color: #9c702322; font: 220px/1 'Noto Serif Devanagari', serif; pointer-events: none; }
+.events::before { content: '❦'; top: 8%; left: -58px; transform: rotate(-20deg); }.events::after { content: '❦'; right: -70px; bottom: 5%; transform: rotate(145deg); }
+.ceremony-crown { display: flex; align-items: center; justify-content: center; gap: 13px; color: #a67525; font-size: 22px; margin: 0 0 12px; }.ceremony-crown span { width: 58px; height: 1px; background: linear-gradient(90deg, transparent, #c39745, transparent); }
+.event-card { overflow: hidden; border-color: #d8bd8c; }.event-card::before { content: ''; position: absolute; inset: 7px; border: 1px solid #c69a4b55; pointer-events: none; }.event-card::after { content: ''; position: absolute; top: -80%; left: -20%; width: 35%; height: 250%; transform: rotate(22deg); background: linear-gradient(90deg, transparent, #fff8d866, transparent); transition: transform .8s cubic-bezier(.16,1,.3,1); pointer-events: none; }.event-card:hover::after { transform: translateX(410%) rotate(22deg); }
+.event-card h3, .event-card p { font-family: 'Noto Serif Devanagari', 'Playfair Display', serif; }.event-card h3 { letter-spacing: .01em; }.event-card p { line-height: 1.85; }.event-card .event-meta { color: #855e20; font-weight: 600; }
+.event-icon { font-family: 'Playfair Display', serif; }
+.featured .event-card { background: linear-gradient(135deg, #fffaf0, #f4dfa5 55%, #fff3d0); }

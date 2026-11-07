@@ -6,14 +6,15 @@ export const wedding = {
   familyNote: 'With the blessings of our beloved families, we request the honour of your presence as we begin our forever.',
   venue: { name: 'Sanwariya Garden', address: '5M5G+JW3, Chandukhedi, Madhya Pradesh 456006', maps: 'https://maps.app.goo.gl/oqKmUaWqfrftbH6s5' },
   events: [
-    ['श्री गणेश पूजन','Thursday, 26 November 2026','4:00 PM','निजी निवास','We begin with blessings and prayers for a joyful celebration.','❦'],
-    ['माता पूजन','Friday, 27 November 2026','9:00 AM','निजी निवास','A sacred family gathering seeking divine blessings.','❦'],
-    ['मंडप एवं गृह शांति','Sunday, 29 November 2026','8:00 AM','Sanwariya Garden','A peaceful morning of rituals, blessings, and new beginnings.','✿'],
-    ['सगाई','Sunday, 29 November 2026','2:00 PM','Sanwariya Garden','A beautiful promise, made in the presence of loved ones.','❦'],
-    ['हल्दी','Sunday, 29 November 2026','4:00 PM','Sanwariya Garden','An afternoon of sunshine, laughter, and marigold memories.','☼'],
-    ['महिला संगीत','Sunday, 29 November 2026','7:00 PM','Sanwariya Garden','An evening filled with music, colour, and dancing hearts.','♫'],
-    ['शुभ लग्न','Monday, 30 November 2026','11:00 AM','Sanwariya Garden','Join us as Kashish and Rohan begin their forever.','♥'],
-    ['स्नेह भोज','Monday, 30 November 2026','5:00 PM onwards','Sanwariya Garden','With warmth and gratitude, we welcome you to share a meal and our happiness.','❦']
+    ['श्री गणेश पूजन','शुक्रवार, 27 नवम्बर 2026','शाम','निजी निवास','मंगलमय उत्सव का आरंभ श्री गणेश के आशीर्वाद और प्रार्थना के साथ।','❦'],
+    ['माता पूजन','शुक्रवार, 27 नवम्बर 2026','प्रातः 9:00 बजे','निजी निवास','परिवार संग दिव्य आशीर्वाद प्राप्त करने का पावन अवसर।','❦'],
+    ['मेहँदी','शनिवार, 28 नवम्बर 2026','समय शीघ्र घोषित होगा','स्थान शीघ्र घोषित होगा','रंगों, हँसी और अपनेपन से सजी एक मनमोहक शाम।','✿'],
+    ['मंडप एवं गृह शांति','रविवार, 29 नवम्बर 2026','प्रातः 8:00 बजे','Sanwariya Garden','शांति, आशीष और नई शुरुआत के पवित्र संस्कार।','✿'],
+    ['सगाई','रविवार, 29 नवम्बर 2026','दोपहर 2:00 बजे','Sanwariya Garden','प्रियजनों की उपस्थिति में एक सुंदर वादा।','❦'],
+    ['हल्दी','रविवार, 29 नवम्बर 2026','सायं 4:00 बजे','Sanwariya Garden','हल्दी की सुनहरी आभा, हँसी और गेंदे की खुशबू।','☼'],
+    ['महिला संगीत','रविवार, 29 नवम्बर 2026','सायं 7:00 बजे','Sanwariya Garden','संगीत, रंग और थिरकते दिलों से भरी एक शाम।','♫'],
+    ['शुभ लग्न','सोमवार, 30 नवम्बर 2026','प्रातः 11:00 बजे','Sanwariya Garden','काशिश और रोहन के अनंत साथ की शुभ शुरुआत में पधारें।','♥'],
+    ['स्नेह भोज','सोमवार, 30 नवम्बर 2026','सायं 5:00 बजे से','Sanwariya Garden','अपने स्नेह और आशीष के साथ भोज में सादर आमंत्रित हैं।','❦']
   ],
   gallery: ['A quiet beginning','Made for each other','A thousand little moments','Our favourite place','Forever starts here','Love, always']
 }
